@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+.relative{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+.absolute{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+.b1{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    top: 20px;
+}
+
+.b2{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: relative;
+    top: 20px;
+}
+
+
+.fixed{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: fixed;
+    right: 0px;
+}
+
+.sticky{
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    position: sticky;
+    top: 50px;
+}
+
+.boxes{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+.boxes1{
+    float: right;
+    clear: left;
+}
+
+.boxes2{
+    float: left;
+    clear: right;
+
+}
+
+.boxes3{
+    float: right;
+    clear: left;
+}
+
+.boxes4{
+    float: left;
+    clear: right;
+
+}
+
+.boxes5{
+    float: right;
+    clear: left;
+}
+
+
+.big{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: darkcyan;
+    border-radius: 50%;
+    position: absolute;
+    top: 2000px;
+    left: 200px;
+    animation: bJump 1s infinite alternate;
+}
+
+@keyframes bJump{
+
+0%{
+  top: 1800px  
+}
+25%{
+    top: 1850px  
+  }
+
+50%{
+  top: 1900px;
+}
+75%{
+    top: 1950px  
+  }
+75%{
+    top: 1975px;
+  }
+  100%{
+    top: 2000px;
+  }
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .container1{
+        display: flex;
+        flex-direction: column;       
+        justify-content: space-evenly;
+    }
+}
